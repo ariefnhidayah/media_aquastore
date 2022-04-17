@@ -3,7 +3,8 @@ const isBase64 = require("is-base64");
 const base64Img = require("base64-img");
 const fs = require("fs");
 
-const { HOSTNAME } = process.env;
+let { HOSTNAME } = process.env;
+HOSTNAME = 'https://drive.aquastoreid.com';
 
 module.exports = {
   getAll: async (req, res) => {
